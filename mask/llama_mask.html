@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/llama_mask.css">
+  <title>LlamaMask</title>
+</head>
+<body>
+  <div class="box">
+    <div class="mybox">
+      <div class="head">
+        <img src="../image/icon.webp" />
+        <div class="name">
+          🔴 LlamaMask
+        </div>
+      </div>
+      <div class="main">
+        <img src="../image/icon.webp" />
+        <h1>Welcome Back!</h1>
+        <div id="coin"><span id="crip">500</span> <span class="chevrez"></span></div>
+
+        <div id="log" class="log">
+        <span>No tienes una cuenta?</span> <a href="mask_login.html">creala aquí</a>
+        </div>
+        <div id="test"></div>
+      </div>
+    </div>
+  </div>
+<script>
+
+function get_data() {
+  let test = document.getElementById('test')
+  let get_data = localStorage.getItem('user_mask')
+  let log = document.getElementById('log')
+  let crip = document.getElementById('crip')
+
+  if (get_data) {
+    log.innerHTML = `<b>Bienvenido ${get_data}</b>`
+    crip.innerHTML = '0'
+  }
+
+
+  //test.innerHTML = get_data
+
+  console.log(get_data)
+}
+
+get_data()
+</script>
+
+</body>
+</html>

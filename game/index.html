@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<title>ROULETTE</title>
+</head>
+<body>
+
+<div class="wallet">
+  <button id="wallet" onclick="mask()">Cryptocurrency wallet</button>
+</div>
+
+<div class="cartera">
+<iframe id="cartera" src="../mask/llama_mask.html"></iframe>
+</div>
+<div id="name" style="position: absolute;"></div>
+<!--<input id="btn" type="submit" value="Conectar Cuenta">-->
+
+<h1>ROULETTE</h1>
+<span>haz clic en el tablero para hacer tu apuesta</span>
+<main>
+  <div class="cart">
+    <div id="triangle"></div>
+    <table>
+      <tr>
+        <td><span class="number" id="red" class="red">01</span></td>
+        <td><span class="number" id="black">02</span></td>
+        <td><span class="number" id="red">03</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="black">04</span></td>
+        <td><span class="number" id="red">05</span></td>
+        <td><span class="number" id="black">06</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="red">07</span></td>
+        <td><span class="number" id="black">08</span></td>
+        <td><span class="number" id="red">09</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="black">10</span></td>
+        <td><span class="number" id="red">11</span></td>
+        <td><span class="number" id="black">12</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="red">13</span></td>
+        <td><span class="number" id="black">14</span></td>
+        <td><span class="number" id="red">15</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="black">16</span></td>
+        <td><span class="number" id="red">17</span></td>
+        <td><span class="number" id="black">18</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="red">19</span></td>
+        <td><span class="number" id="black">20</span></td>
+        <td><span class="number" id="red">21</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="black">22</span></td>
+        <td><span class="number" id="red">23</span></td>
+        <td><span class="number" id="black">24</span></td>
+      </tr>
+      <tr>
+        <td><span class="number" id="red">25</span></td>
+        <td><span class="number" id="black">26</span></td>
+        <td><span class="number" id="red">27</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="bet">
+    <div class="bet_res">
+      <b>Mis apuestas</b>
+      <div id="res_bet"></div>
+    </div>
+    <div id="res_random">
+      <span id="acierto">ACIERTOS</span>
+      <div class="roule" id="roule">
+      </div>
+      <!--<img src="https://j.gifs.com/mw6JAO@small.gif">-->
+    </div>
+  </div>
+</div>
+</main>
+<br/>
+<input id="ruleta" type="submit" value="ROULETTE">
+<br/>
+
+
+<script src="../client/script.js"></script>
+<script src="../client/llama_mask.js"></script>
+<script>
+function get_data() {
+  let arr = JSON.parse(localStorage.getItem('name')) || [];
+  console.log(arr.join());
+}
+
+get_data();
+</script>
+</body>
+</html>

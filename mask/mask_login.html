@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/llama_mask.css">
+  <title>log_in</title>
+</head>
+<body>
+  <div class="box">
+    <div class="mybox">
+      <img src="../image/back.png" style="position: absolute; width: 30px; height: 30px; margin-top: 10px; margin-left: 10px; cursor: pointer;" id="image_click" onclick="image_back()">
+      <center><img style="margin-top: 10px;" src="../image/icon.webp"></center>
+      <h1 style="text-align: center; color: white;">Crear cuenta</h1>
+      <div class="login">
+        <b>UserName</b>
+        <input type="text" id="user_name">
+      </div>
+      <div class="login">
+        <b>Password</b>
+        <input type="password">
+      </div>
+      <div class="foot">
+        <button class="buton" onclick="login()">Create acount</button>
+      </div>
+      <div class="disc">
+        <i><b>Las cuentas creadas no seran visible para los demás.</b></i>
+      </div>
+    </div>
+  </div>
+<script src="../client/llama_mask.js"></script>
+</body>
+</html>
